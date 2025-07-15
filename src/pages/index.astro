@@ -1,16 +1,28 @@
 ---
-
+import PriceTracker from '../components/PriceTracker';
+import '../index.css';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PriceScope - Rastrea Precios de Amazon Inteligentemente</title>
+    <meta name="description" content="Rastrea precios de Amazon, recibe alertas cuando bajen y ahorra dinero con PriceScope. La herramienta más avanzada para seguimiento de precios." />
+    <meta name="author" content="PriceScope Team" />
+
+    <meta property="og:title" content="PriceScope - Rastrea Precios de Amazon" />
+    <meta property="og:description" content="La herramienta más avanzada para rastrear precios de Amazon y ahorrar dinero" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@pricescope" />
+    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+  </head>
+
+  <body>
+    <PriceTracker client:load />
+  </body>
 </html>
