@@ -1,47 +1,71 @@
-# Astro Starter Kit: Minimal
+# VioletTrack 🛍️
 
-```sh
-npm create astro@latest -- --template minimal
+**VioletTrack** es una aplicación web moderna para rastrear precios de productos de Amazon y recibir alertas cuando bajen los precios.
+
+## ✨ Características
+
+- 🔍 **Scraping en tiempo real** de productos de Amazon
+- 📊 **Historial de precios** y análisis de tendencias
+- 📧 **Alertas por email** cuando los precios bajan
+- 💾 **Almacenamiento local** de productos trackeados
+- 📱 **Diseño responsive** y moderno
+- ⚡ **Interfaz rápida** construida con Astro + React
+
+## 🚀 Tecnologías
+
+- **Frontend**: Astro v5, React 18, TypeScript
+- **Estilos**: Tailwind CSS v3.4
+- **UI Components**: shadcn/ui
+- **Scraping**: Cheerio, Axios
+- **Iconos**: Lucide React
+
+## ��️ Instalación
+
+```bash
+# Clonar repositorio
+git clone https://github.com/rubbenix/VioletTrack.git
+cd VioletTrack
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en desarrollo
+npm run dev
 ```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+La aplicación estará disponible en `http://localhost:4322`
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📖 Uso
 
-## 🚀 Project Structure
+### 1. Trackear un producto
 
-Inside of your Astro project, you'll see the following folders and files:
+1. Copia la URL de cualquier producto de Amazon
+2. Pégala en el formulario principal
+3. Haz clic en "Trackear Producto"
+4. El sistema extraerá automáticamente título, precio, imagen y disponibilidad
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+### 2. Configurar alertas
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+1. Después de trackear un producto, aparecerá un campo de email
+2. Ingresa tu email para recibir alertas
+3. Serás notificado cuando el precio baje
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+### 3. Gestionar productos
 
-Any static assets, like images, can be placed in the `public/` directory.
+- Ve todos tus productos trackeados en la sección inferior
+- Elimina productos individuales o limpia toda la lista
+- Consulta el historial de precios y tendencias
 
-## 🧞 Commands
+## 🎯 Funcionalidades Implementadas
 
-All commands are run from the root of the project, from a terminal:
+- ✅ Scraping real de Amazon con fallback a datos simulados
+- ✅ Extracción de título, precio, imagen y disponibilidad
+- ✅ Almacenamiento local de productos trackeados
+- ✅ Interfaz para gestionar productos
+- ✅ Sistema de alertas por email (frontend)
+- ✅ Historial de precios básico
+- ✅ Diseño responsive y moderno
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+## 👨‍💻 Autor
 
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+**Rubén** - [@rubbenix](https://github.com/rubbenix)
